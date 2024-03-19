@@ -90,10 +90,12 @@ php artisan serve # Start the project
 - The site language can be changed to English or Arabic.
 - Users can register on the site with the ability to view or change account information.
 
-## Manager Information
+## The Admin Information
 
-- Create your general manageron the database , And be sure to set (admin) column value to (1):
-- Manager's data can be changed from the account page.
+- Create an account using (register) link ,
+  then if you want to make this account the admin of website
+  be sure to set (admin) column value to (1) direct from database
+- Manager's data (email/password) can be changed from the account page and dont set it direct from database.
 
 ### Control Panel
 
