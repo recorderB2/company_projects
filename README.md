@@ -92,9 +92,7 @@ php artisan serve # Start the project
 
 ## Manager Information
 
-- There is a general manager with the following credentials:
-  - E-mail: admin@gmail.com
-  - Temporary password: 12345678
+- Create your general manageron the database , And be sure to set (admin) column value to (1):
 - Manager's data can be changed from the account page.
 
 ### Control Panel
