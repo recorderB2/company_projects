@@ -84,6 +84,9 @@ php artisan migrate
 php artisan db:seed
 # Seed testing data
 
+php artisan storage:link
+# Link storgae folder
+
 npm install
 # Install JavaScript dependencies
 
