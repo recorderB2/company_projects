@@ -1,25 +1,87 @@
-# Company Project
+# Company Projects
+
+## Description
+
+This Is My Project For Hsoub Academy
+
+## Table of Contents
+
+1. [Operating Requirements](#operating-requirements)
+2. [Visitor Information](#visitor-information)
+3. [Manager Information](#manager-information)
+4. [Control Panel](#control-panel)
 
 ## Operating Requirements
-(Change It From .env File)
-### General Settings
-1. APP_NAME
-2. APP_URL
 
-### Databases
-1. DB_CONNECTION
-2. DB_HOST
-3. DB_PORT
-4. DB_DATABASE
-5. DB_USERNAME
-6. DB_PASSWORD
+### Editing Environment Variables
 
-### E-mail
-1. MAIL_MAILER
-2. MAIL_HOST
-3. MAIL_PORT
-4. MAIL_USERNAME
-5. MAIL_PASSWORD
+- Edit the app name and the URL values in the `.env` file:
+    ```plaintext
+    APP_NAME=YourProjectName
+    APP_URL=WebsiteURL
+    ```
+- If working locally, modify these values:
+    ```plaintext
+    APP_ENV=local
+    APP_DEBUG=true
+    ```
+- Set the URL to localhost:
+    ```plaintext
+    APP_URL=http://localhost:8000
+    ```
+
+### Database Configuration
+
+- Create a database with the desired name (e.g., `company_projects`) and update the following values in the `.env` file:
+    ```plaintext
+    DB_CONNECTION=your_connection
+    DB_HOST=your_database_host
+    DB_PORT=your_database_port
+    DB_DATABASE=your_database_name
+    DB_USERNAME=your_database_username
+    DB_PASSWORD=your_database_password
+    ```
+- If on localhost, use default values:
+    ```plaintext
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=company_projects
+    DB_USERNAME=root
+    DB_PASSWORD=
+    ```
+
+### Mail Configuration
+
+- Update mail values in the `.env` file:
+    ```plaintext
+    MAIL_MAILER=smtp
+    MAIL_HOST=smtp.mailtrap.io
+    MAIL_PORT=2525
+    MAIL_USERNAME=YOUR_USER_NAME
+    MAIL_PASSWORD=YOUR_PASSWORD
+    ```
+- If on localhost, use these values:
+    ```plaintext
+    MAIL_MAILER=smtp
+    MAIL_HOST=smtp.mailtrap.io
+    MAIL_PORT=2525
+    MAIL_USERNAME=YOUR_USER_NAME
+    MAIL_PASSWORD=YOUR_PASSWORD
+    ```
+
+## Necessary Commands
+
+Run the following commands to set up the project:
+
+```bash
+composer install # Install vendor and other important folders
+php artisan migrate # Create tables in the database
+php artisan db:seed # Seed testing data
+npm install # Install JavaScript dependencies
+npm run build # Build assets
+php artisan serve # Start the project
+
 
 ## Visitor Information
 
