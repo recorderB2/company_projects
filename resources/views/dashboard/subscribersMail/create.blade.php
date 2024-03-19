@@ -30,6 +30,16 @@
                         <label for="body" class="block text-gray-700 font-semibold mb-2">Body</label>
                         <textarea name="body" class="w-full border border-gray-300 rounded-md px-4 py-2" rows="6" placeholder="Enter email body"></textarea>
                       </div>
+                      
+                      <div class="mb-12">
+                        <label for="recipient" class="block text-gray-700 font-semibold mb-2">Send To</label>
+                        <select name="recipient" class="block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-indigo-500">
+                          <option value="all" selected>All Subscribers</option>
+                          @foreach ($subscribers as $subscriber)
+                            <option value="{{$subscriber->email}}">{{$subscriber->email}}</option>
+                          @endforeach
+                        </select> 
+                      </div>
                       <div class="mb-12">
                         <label for="lang" class="block text-gray-700 font-semibold mb-2">Lang</label>
                         <select name="lang" class="block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-indigo-500">
