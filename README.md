@@ -74,13 +74,24 @@ This Is My Project For Hsoub Academy
 
 Run the following commands to set up the project:
 
-```
-composer install # Install vendor and other important folders
-php artisan migrate # Create tables in the database
-php artisan db:seed # Seed testing data
-npm install # Install JavaScript dependencies
-npm run build # Build assets
-php artisan serve # Start the project
+```bash
+composer install
+# Install vendor and other important folders
+
+php artisan migrate
+# Create tables in the database
+
+php artisan db:seed
+# Seed testing data
+
+npm install
+# Install JavaScript dependencies
+
+npm run build
+# Build assets
+
+php artisan serve
+# Start the project
 ```
 
 ## Visitor Information
