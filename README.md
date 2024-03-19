@@ -74,7 +74,6 @@ This Is My Project For Hsoub Academy
 
 Run the following commands to set up the project:
 
-```bash
 composer install # Install vendor and other important folders
 php artisan migrate # Create tables in the database
 php artisan db:seed # Seed testing data
