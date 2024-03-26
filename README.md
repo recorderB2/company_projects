@@ -96,7 +96,7 @@ npm install
 npm run build
 # Build assets
 
-php artisan queue:start
+php artisan queue:work
 # Start Queues
 ```
 
