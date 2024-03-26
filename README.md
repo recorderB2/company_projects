@@ -78,6 +78,9 @@ Run the following commands to set up the project:
 composer install
 # Install vendor and other important folders
 
+php artisan queue:table
+# Creat jobs tale migration
+
 php artisan migrate
 # Create tables in the database
 
@@ -93,8 +96,8 @@ npm install
 npm run build
 # Build assets
 
-php artisan serve
-# Start the project
+php artisan queue:start
+# Start Queues
 ```
 
 ## Visitor Information
